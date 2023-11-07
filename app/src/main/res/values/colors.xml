@@ -2,4 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="textField_login_background">#4c4b46</color>
+    <color name="textField_login_text">#858280</color>
 </resources>
