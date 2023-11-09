@@ -46,8 +46,10 @@ dependencies {
     val navVersion = "2.5.2"
     val lifecycleVersion = "2.5.1"
     val hiltVersion = "2.44"
+    val retrofit_version = "2.9.0"
+    val ktx_version = "1.9.0"
 
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.core:core-ktx:1.7.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -65,5 +67,11 @@ dependencies {
     implementation("com.google.dagger:hilt-android:$hiltVersion")
     kapt("com.google.dagger:hilt-compiler:$hiltVersion")
 
-    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha13")
+    implementation("com.squareup.retrofit2:converter-gson:$retrofit_version")
+    implementation("com.squareup.retrofit2:retrofit:$retrofit_version")
+    implementation("com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2")
+    implementation("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2")
+
+    //Local datastore
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
 }

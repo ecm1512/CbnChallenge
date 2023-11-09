@@ -8,9 +8,11 @@ import androidx.lifecycle.lifecycleScope
 import com.example.mbcchallenge.R
 import com.example.mbcchallenge.databinding.ActivitySplashBinding
 import com.example.mbcchallenge.presentation.login.LoginActivity
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 class SplashActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySplashBinding
